@@ -1,0 +1,17 @@
+Time.window,Contrast,Group,Brain.area,Estimate,SE,Lower_CI,Upper_CI,t,df,Holm-Bonferroni-corrected_p,p.asterisks
+Window 1,Switch_conditions_minus_nonswitch_condition,Quick,anterior,-0.247461807,0.59303887,-1.409817993,0.914894379,-0.417277551,44.4806495,1,NA
+Window 1,Switch_conditions_minus_nonswitch_condition,Slow,anterior,0.320487655,0.59303887,-0.84186853,1.482843841,0.540415935,44.48064533,1,NA
+Window 1,Switch_conditions_minus_nonswitch_condition,Quick,posterior,-0.526217618,0.59303887,-1.688573804,0.636138567,-0.887323993,44.48064926,1,NA
+Window 1,Switch_conditions_minus_nonswitch_condition,Slow,posterior,-0.593996709,0.59303887,-1.756352895,0.568359476,-1.001615137,44.4806451,1,NA
+Window 2,Switch_conditions_minus_nonswitch_condition,Quick,anterior,-1.009766739,0.595688319,-2.177315845,0.157782366,-1.695125969,44.35959865,0.970612073,NA
+Window 2,Switch_conditions_minus_nonswitch_condition,Slow,anterior,-0.282463658,0.595688319,-1.450012764,0.885085448,-0.474180287,44.35960282,1,NA
+Window 2,Switch_conditions_minus_nonswitch_condition,Quick,posterior,-1.119729603,0.595688319,-2.287278709,0.047819503,-1.879723954,44.35959776,0.733959457,NA
+Window 2,Switch_conditions_minus_nonswitch_condition,Slow,posterior,-0.927176743,0.595688319,-2.094725849,0.240372362,-1.556479645,44.35960192,1,NA
+Window 3,Switch_conditions_minus_nonswitch_condition,Quick,anterior,-0.657514019,0.595651086,-1.824990147,0.509962109,-1.103857669,44.17557165,1,NA
+Window 3,Switch_conditions_minus_nonswitch_condition,Slow,anterior,-1.90168298,0.595651086,-3.069159109,-0.734206852,-3.192612295,44.17557596,0.038978127,*
+Window 3,Switch_conditions_minus_nonswitch_condition,Quick,posterior,-1.257639876,0.595651086,-2.425116005,-0.090163748,-2.111370072,44.17557166,0.485197318,NA
+Window 3,Switch_conditions_minus_nonswitch_condition,Slow,posterior,-1.935333243,0.595651086,-3.102809372,-0.767857115,-3.24910554,44.17557598,0.035456771,*
+Window 4,Switch_conditions_minus_nonswitch_condition,Quick,anterior,-0.793823118,0.836238198,-2.432849987,0.845203751,-0.94927871,44.04291677,1,NA
+Window 4,Switch_conditions_minus_nonswitch_condition,Slow,anterior,-1.861115268,0.836238198,-3.500142137,-0.222088399,-2.225580309,44.04289297,0.405715048,NA
+Window 4,Switch_conditions_minus_nonswitch_condition,Quick,posterior,-1.128641552,0.836238198,-2.76766842,0.510385317,-1.349665148,44.04291669,1,NA
+Window 4,Switch_conditions_minus_nonswitch_condition,Slow,posterior,-2.173901067,0.836238198,-3.812927936,-0.534874199,-2.599619429,44.04289292,0.177138918,NA

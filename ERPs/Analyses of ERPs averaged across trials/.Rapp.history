@@ -1,0 +1,200 @@
+install.packages('lme4')#
+install.packages('dfoptim')
+library(lme4)#
+library(dfoptim)
+packageVersion('lme4')
+packageVersion('dfoptim')
+readRDS('EEG.rds')#
+# Remove Participant '7' because of very poor EEG signal (out of 36 trials per condition,#
+# this data only kept 1, 2, and 4 respectively per condition after artefact rejection).#
+EEG = EEG[!EEG$participant=='7', ]#
+# Limit data set for analysis to include only electrodes within the Anterior and Posterior#
+# area subsets.#
+EEG = EEG[!is.na(EEG$location), ]
+data = EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368,]
+# Larger model#
+attempt4 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) + (1| location : electrode) +#
+  (1| RT.based_Groups : participant) + (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  data)#
+attempt4#
+anova(attempt4)#
+attempt4_allFit <- allFit(attempt4)#
+str(attempt4_allFit)#
+summ <- summary(attempt4_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked#
+# Simpler model#
+start_time <- Sys.time()#
+attempt6 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) + (1| RT.based_Groups : participant) +#
+  (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  data)#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt6#
+attempt6_allFit <- allFit(attempt6)#
+str(attempt6_allFit)#
+summ <- summary(attempt6_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked
+EEG = readRDS('EEG.rds')#
+# Remove Participant '7' because of very poor EEG signal (out of 36 trials per condition,#
+# this data only kept 1, 2, and 4 respectively per condition after artefact rejection).#
+EEG = EEG[!EEG$participant=='7', ]#
+# Limit data set for analysis to include only electrodes within the Anterior and Posterior#
+# area subsets.#
+EEG = EEG[!is.na(EEG$location), ]#
+data = EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368,]#
+str(data)#
+# Larger model#
+attempt4 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) + (1| location : electrode) +#
+  (1| RT.based_Groups : participant) + (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  data)#
+attempt4#
+anova(attempt4)#
+attempt4_allFit <- allFit(attempt4)#
+str(attempt4_allFit)#
+summ <- summary(attempt4_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked#
+# Simpler model#
+start_time <- Sys.time()#
+attempt6 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) + (1| RT.based_Groups : participant) +#
+  (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  data)#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt6#
+attempt6_allFit <- allFit(attempt6)#
+str(attempt6_allFit)#
+summ <- summary(attempt6_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked
+# Larger model#
+attempt4 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) + (1| location : electrode) +#
+  (1| RT.based_Groups : participant) + (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368, ])#
+attempt4#
+anova(attempt4)#
+attempt4_allFit <- allFit(attempt4)#
+str(attempt4_allFit)#
+summ <- summary(attempt4_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked
+str(Dyestuff)
+fm01ML <- lmer(Yield ~ 1|Batch, Dyestuff[!Dyestuff$Batch=='A',], REML = FALSE)
+gm_all <- allFit(fm01ML)
+ss <- summary(gm_all)
+fm01ML <- lmer(Yield ~ 1|Batch, Dyestuff[!Dyestuff$Batch=='A',])
+gm_all <- allFit(fm01ML)
+ss <- summary(gm_all)
+ss[1]
+ss[2]
+ss[1][2]
+ss
+data = Dyestuff[!Dyestuff$Batch=='A',]
+fm01ML <- lmer(Yield ~ 1|Batch, data)
+gm_all <- allFit(fm01ML)
+ss <- summary(gm_all)
+ls()
+attemtp4
+attempt4
+summary(attempt4)
+start_time <- Sys.time()#
+attempt6 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) +#
+  (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  data)#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt6
+start_time <- Sys.time()#
+attempt6 = lme4::lmer(microvolts ~#
+  (1| time) + (1| electrode) +#
+  (condition | participant) +#
+  RT.based_Groups * condition * location,#
+  EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368, ])#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt6#
+summary(attempt6)
+start_time <- Sys.time()#
+attempt8 = lme4::lmer(microvolts ~#
+                        (1| participant) + (1| time) + (1| electrode) +#
+                        RT.based_Groups * condition * location,#
+                      EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368, ])#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt8#
+summary(attempt8)
+ls()
+rm(list=ls())
+ls()
+EEG = readRDS('EEG.rds')#
+# Remove Participant '7' because of very poor EEG signal (out of 36 trials per condition,#
+# this data only kept 1, 2, and 4 respectively per condition after artefact rejection).#
+EEG = EEG[!EEG$participant=='7', ]#
+# Limit data set for analysis to include only electrodes within the Anterior and Posterior#
+# area subsets.#
+EEG = EEG[!is.na(EEG$location), ]
+# Attempt 7, without '(1| RT.based_Groups : participant)'#
+start_time <- Sys.time()#
+attempt7 = lme4::lmer(microvolts ~#
+                        (1| time) + (1| electrode) + #
+                        (condition | participant) +#
+                        RT.based_Groups * condition * location,#
+                      EEG[as.numeric(as.character(EEG$time)) >= 270 & as.numeric(as.character(EEG$time)) <= 368, ])#
+# Show running time#
+end_time <- Sys.time()#
+end_time - start_time#
+attempt7#
+summary(attempt7)#
+attempt7_allFit <- allFit(attempt7)#
+str(attempt7_allFit)#
+summ <- summary(attempt7_allFit)#
+summ$fixef  ## extract fixed effects#
+summ$llik  ## log-likelihoods#
+summ$sdcor  ## SDs and correlations#
+summ$theta  ## Cholesky factors#
+summ$which.OK  ## which fits worked
+f
+data = Dyestuff[!Dyestuff$Batch=='A',]#
+fm01ML <- lmer(Yield ~ 1|Batch, data)gm_all <- allFit(fm01ML)
+> data = Dyestuff[!Dyestuff$Batch=='A',]#
+> fm01ML <- lmer(Yield ~ 1|Batch, data)#
+> gm_all <- allFit(fm01ML)
+data = Dyestuff[!Dyestuff$Batch=='A', ]#
+fm01ML <- lmer(Yield ~ 1|Batch, data)#
+gm_all <- allFit(fm01ML)
+ss <- summary(gm_all)
+gm_all

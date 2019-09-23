@@ -1,0 +1,17 @@
+Contrast,Time.window,Group,Brain.area,Estimate,SE,Lower_CI,Upper_CI,t,df,Holm-Bonferroni-corrected_p
+Switch_conditions_minus_nonswitch_condition,Window 1,Quick,language,-0.594385041,0.487423943,-1.54973597,0.360965887,-1.219441617,54.67845934,1
+Switch_conditions_minus_nonswitch_condition,Window 1,Slow,language,0.808110352,0.487423943,-0.147240577,1.763461281,1.657920919,54.67844685,1
+Switch_conditions_minus_nonswitch_condition,Window 1,Quick,vision,0.005397438,0.480809452,-0.936989088,0.947783964,0.011225732,51.77037571,1
+Switch_conditions_minus_nonswitch_condition,Window 1,Slow,vision,0.177497632,0.480809452,-0.764888894,1.119884158,0.36916419,51.77036454,1
+Switch_conditions_minus_nonswitch_condition,Window 2,Quick,language,-0.604292065,0.479475604,-1.544064249,0.335480118,-1.26031869,51.19829046,1
+Switch_conditions_minus_nonswitch_condition,Window 2,Slow,language,0.709098804,0.479475604,-0.230673379,1.648870988,1.478904867,51.19827944,1
+Switch_conditions_minus_nonswitch_condition,Window 2,Quick,vision,-0.22176375,0.474777627,-1.152327898,0.708800398,-0.467089723,49.22101808,1
+Switch_conditions_minus_nonswitch_condition,Window 2,Slow,vision,-0.354598288,0.474777627,-1.285162436,0.57596586,-0.746872363,49.22100746,1
+Switch_conditions_minus_nonswitch_condition,Window 3,Quick,language,-0.703777758,0.470668117,-1.626287267,0.21873175,-1.495273917,47.53887091,1
+Switch_conditions_minus_nonswitch_condition,Window 3,Slow,language,-0.66638485,0.470668117,-1.588894359,0.256124658,-1.415827473,47.53886068,1
+Switch_conditions_minus_nonswitch_condition,Window 3,Quick,vision,-0.440127333,0.468121256,-1.357644996,0.477390329,-0.940199419,46.51823707,1
+Switch_conditions_minus_nonswitch_condition,Window 3,Slow,vision,-0.754027594,0.468121256,-1.671545257,0.163490068,-1.610752735,46.51822703,1
+Switch_conditions_minus_nonswitch_condition,Window 4,Quick,language,-0.723171954,0.466586467,-1.63768143,0.191337522,-1.549920549,45.91117198,1
+Switch_conditions_minus_nonswitch_condition,Window 4,Slow,language,-0.621646922,0.466586467,-1.536156398,0.292862554,-1.332329515,45.91116204,1
+Switch_conditions_minus_nonswitch_condition,Window 4,Quick,vision,-0.551127435,0.465046613,-1.462618796,0.360363927,-1.185101491,45.30809319,1
+Switch_conditions_minus_nonswitch_condition,Window 4,Slow,vision,-1.064554243,0.465046613,-1.976045605,-0.153062882,-2.289134494,45.30808341,0.428538583

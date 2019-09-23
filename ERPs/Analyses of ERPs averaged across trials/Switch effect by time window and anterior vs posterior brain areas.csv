@@ -1,0 +1,9 @@
+Time.window,Brain.area,Contrast,Estimate,SE,Lower_CI,Upper_CI,t,df,Holm-Bonferroni-corrected_p,p.asterisks
+Window 1,anterior,Switch_conditions_minus_nonswitch_condition,0.036512924,0.419341807,-0.785397017,0.858422865,0.087071986,44.48064766,0.931005096,NA
+Window 1,posterior,Switch_conditions_minus_nonswitch_condition,-0.560107164,0.419341807,-1.382017105,0.261802777,-1.335681668,44.48064742,0.396445803,NA
+Window 2,anterior,Switch_conditions_minus_nonswitch_condition,-0.646115199,0.42121525,-1.471697089,0.179466691,-1.533931164,44.35960017,0.396445803,NA
+Window 2,posterior,Switch_conditions_minus_nonswitch_condition,-1.023453173,0.42121525,-1.849035063,-0.197871283,-2.429762866,44.35959929,0.09611408,NA
+Window 3,anterior,Switch_conditions_minus_nonswitch_condition,-1.2795985,0.421188922,-2.105128787,-0.454068212,-3.038063046,44.17556121,0.027919558,*
+Window 3,posterior,Switch_conditions_minus_nonswitch_condition,-1.59648656,0.421188922,-2.422016847,-0.770956273,-3.790428656,44.17556127,0.003618561,**
+Window 4,anterior,Switch_conditions_minus_nonswitch_condition,-1.327469193,0.591309701,-2.486436206,-0.16850218,-2.244964342,44.04287964,0.119365807,NA
+Window 4,posterior,Switch_conditions_minus_nonswitch_condition,-1.651271309,0.591309701,-2.810238323,-0.492304296,-2.792565905,44.04287957,0.046248113,*
