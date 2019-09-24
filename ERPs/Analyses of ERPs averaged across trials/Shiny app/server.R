@@ -1,6 +1,7 @@
 # server
 
 library(shiny)
+library(shinydashboard)
 library(ggplot2)
 
 EEG.ParticipantAndElectrode = readRDS('EEG.ParticipantAndElectrode.rds')
