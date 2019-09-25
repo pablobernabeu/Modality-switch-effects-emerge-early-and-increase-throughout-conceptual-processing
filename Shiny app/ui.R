@@ -1,7 +1,6 @@
 # UI
 
 library(shiny)
-library(shinydashboard)
 library(ggplot2)
 
 EEG.GroupAndElectrode = readRDS('EEG.GroupAndElectrode.rds')
