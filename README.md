@@ -1,4 +1,4 @@
-This Github repo has the single purpose of facilitating any users to work with the R code in a Binder environment. All files could not be included due to limitations such as a maximum of 100 objects per folder. 
+This Github repo has the single purpose of facilitating any users to work with the R code in a Binder environment. The entire data set could not be included here due to Github space caps such as a maximum of 100 objects per folder.
 
 Edit and run any of the R code in RStudio: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio)
 
