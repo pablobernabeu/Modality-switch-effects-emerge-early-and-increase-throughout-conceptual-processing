@@ -48,7 +48,7 @@ plot_GroupAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=condition)
   annotate(geom='segment', y=seq(-8,8,1), yend=seq(-8,8,1), x=-4, xend=8, color='black') +
   annotate(geom='segment', y=-8.2, yend=-8.38, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
-  theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='#EEEEEE', size=0),
+  theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='transparent', size=0),
 	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
 	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
 	plot.subtitle = element_text(size=16, hjust = 0.5),
@@ -114,10 +114,10 @@ plot_ParticipantAndLocation = ggplot(df2, aes(x=time, y=-microvolts, color=condi
   annotate(geom='segment', y=seq(-14,14,1), yend=seq(-14,14,1), x=-4, xend=8, color='black') +
   annotate(geom='segment', y=-14.2, yend=-14.58, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
-  theme(legend.position = c(0.100, 0.130), legend.background = element_rect(fill='#EEEEEE', size=0),
-	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
-	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
-	plot.subtitle = element_text(size=16, hjust = 0.5),
+  theme(legend.position = c(0.100, 0.140), legend.background = element_rect(fill='transparent', size=0),
+	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=12),
+	legend.title = element_text(size=12, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
+	plot.subtitle = element_text(size=15, hjust = 0.5),
 	axis.text.y = element_blank(), axis.text.x = element_text(size = 14, vjust= 2.12, face='bold', color = 'grey32', family='sans'), 
 	axis.ticks=element_blank(), panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
 	plot.margin = unit(c(0.5,0.1,0,0), 'cm')) +
@@ -127,8 +127,8 @@ plot_ParticipantAndLocation = ggplot(df2, aes(x=time, y=-microvolts, color=condi
   annotate('segment', x=500, xend=750, y=-14, yend=-14, colour = 'grey75', size = 1.5) +
   scale_fill_manual(name = 'Context / Target trial', values=colours) +
   scale_color_manual(name = 'Context / Target trial', values=colours) +
-  guides(linetype=guide_legend(override.aes = list(size=1.2))) +
-   guides(color=guide_legend(override.aes = list(size=2.5))) +
+  guides(linetype=guide_legend(override.aes = list(size=0.5))) +
+   guides(color=guide_legend(override.aes = list(size=2))) +
 # Print y axis labels within plot area ('u03bc' = Greek micro letter):
   annotate('text', label = expression(bold('\u2013' * '6 ' * '\u03bc' * 'V')), x = -32, y = 6, size = 4.5, color = 'grey32', family='sans') +
   annotate('text', label = expression(bold('+6 ' * '\u03bc' * 'V')), x = -32, y = -6, size = 4.5, color = 'grey32', family='sans') + 
@@ -180,9 +180,9 @@ plot_ParticipantAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=cond
   annotate(geom='segment', y=seq(-18,18,1), yend=seq(-18,18,1), x=-4, xend=8, color='black') +
   annotate(geom='segment', y=-18.2, yend=-18.58, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
-  theme(legend.position = c(0.100, 0.130), legend.background = element_rect(fill='#EEEEEE', size=0),
-	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
-	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
+  theme(legend.position = c(0.100, 0.140), legend.background = element_rect(fill='transparent', size=0),
+	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=12),
+	legend.title = element_text(size=12, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
 	plot.subtitle = element_text(size=16, hjust = 0.5),
 	axis.text.y = element_blank(), axis.text.x = element_text(size = 14, vjust= 2.12, face='bold', color = 'grey32', family='sans'), 
 	axis.ticks=element_blank(), panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
@@ -193,8 +193,8 @@ plot_ParticipantAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=cond
   annotate('segment', x=500, xend=750, y=-18, yend=-18, colour = 'grey75', size = 1.5) +
   scale_fill_manual(name = 'Context / Target trial', values=colours) +
   scale_color_manual(name = 'Context / Target trial', values=colours) +
-  guides(linetype=guide_legend(override.aes = list(size=1.2))) +
-   guides(color=guide_legend(override.aes = list(size=2.5))) +
+  guides(linetype=guide_legend(override.aes = list(size=0.5))) +
+   guides(color=guide_legend(override.aes = list(size=2))) +
 # Print y axis labels within plot area ('u03bc' = Greek micro letter):
   annotate('text', label = expression(bold('\u2013' * '8 ' * '\u03bc' * 'V')), x = -32, y = 8, size = 4.5, color = 'grey32', family='sans') +
   annotate('text', label = expression(bold('+8 ' * '\u03bc' * 'V')), x = -32, y = -8, size = 4.5, color = 'grey32', family='sans') + 
@@ -246,7 +246,7 @@ plot_OLDGroupAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=conditi
   annotate(geom='segment', y=seq(-8,8,1), yend=seq(-8,8,1), x=-4, xend=8, color='black') +
   annotate(geom='segment', y=-8.2, yend=-8.38, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
-  theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='#EEEEEE', size=0),
+  theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='transparent', size=0),
 	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
 	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
 	plot.subtitle = element_text(size=16, hjust = 0.5),
