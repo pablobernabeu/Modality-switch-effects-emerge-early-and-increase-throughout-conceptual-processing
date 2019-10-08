@@ -59,6 +59,7 @@ shinyUI(
 
 	h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
 	h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
+	h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
 	h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
 	),
 
@@ -94,6 +95,7 @@ shinyUI(
 	
 	h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
 	h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
+	h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
 	h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
    ),
 
@@ -133,6 +135,7 @@ conditionalPanel(
                              '56','57','58','59','60'), selected = '30' ),
   h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
   h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
+  h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
   h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
 ),
 
@@ -160,6 +163,7 @@ conditionalPanel(
                              '56','57','58','59','60'), selected = '30' ),
   h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
   h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
+  h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
   h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
 ) ),
 
@@ -210,7 +214,7 @@ h5(HTML('<div style = "text-indent:-30px; padding-left:60px; padding-right:30px;
 h5(strong(HTML('<div style="background-color:#FDFCFF; padding-left:30px; font-size:15px; padding-bottom:6px; padding-top:6px;"> Abstract </div>'))),
 h5(HTML('<div style="padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"> We tested whether conceptual processing is modality-specific by tracking the time course of the Conceptual Modality Switch effect. Forty-six participants verified the relation between property words and concept words. The conceptual modality of consecutive trials was manipulated in order to produce an Auditory-to-visual switch condition, a Haptic-to-visual switch condition, and a Visual-to-visual, no-switch condition. Event-Related Potentials (ERPs) were time-locked to the onset of the first word (property) in the target trials so as to measure the effect online and to avoid a within-trial confound. A switch effect was found, characterized by more negative ERP amplitudes for modality switches than no-switches. It proved significant in four typical time windows from 160 to 750 milliseconds post word onset, with greater strength in posterior brain regions, and after 350 milliseconds. These results suggest that conceptual processing may be modality-specific in certain tasks, but also that the early stage of processing is relatively amodal. </div>'), align = 'justify'),
 h4(strong(HTML('<div style="background-color:#FEF9FF; padding-left:30px; padding-bottom:7px; padding-top:7px;"> Acknowledgments </div>'))),
-h5(HTML('<div style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"> This experiment was hosted and co-funded by the <a href="https://www.mpi.nl/"> Neurobiology of Language department </a> at the <a href="https://www.mpi.nl/department/neurobiology-language/4"> Max Planck Institute for Psycholinguistics</a>. </div>')),
+h5(HTML('<div style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"> This experiment was hosted and co-funded by the <a href="https://www.mpi.nl/department/neurobiology-language/4"> Neurobiology of Language department </a> at the <a href="https://www.mpi.nl"> Max Planck Institute for Psycholinguistics</a>. </div>')),
 h4(strong(HTML('<div style="background-color:#FEF9FF; padding-left:30px; padding-bottom:7px; padding-top:7px;"> See also: Modality norms </div>'))),
 h5(HTML('<div><a href="https://pablobernabeu.shinyapps.io/Dutch-modality-exclusivity-norms/" style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Dashboard presenting the modality norms used for the stimuli of this experiment. </a></div>')),
 br(), br(), br()
