@@ -145,7 +145,7 @@ conditionalPanel(
 conditionalPanel(
   condition = 'input.tabvals == 4',
   
-  h5(HTML('<div style="font-size:1.5em; font-weight:bold; color:red; padding-bottom:5px;"> Original groups shown here (<a href="https://mindmodeling.org/cogsci2017/papers/0318/paper0318.pdf" style="color:blue"><i class="fas fa-external-link-alt" aria-hidden="true"></i> see paper</a>) </div>')),
+  h5(HTML('<div style="color:red; padding-bottom:5px;"> <font style="font-size:1.5em; font-weight:bold;">Original groups in this tab</font> <font style="font-size:1em;">(<a href="https://mindmodeling.org/cogsci2017/papers/0318/paper0318.pdf" style="color:blue"><i class="fas fa-external-link-alt" aria-hidden="true"></i> see paper for explanation</a>)</font></div>')),
 
   selectInput('var.OLDGroup', label = 'ORIGINAL Group', choices = list('Quick','Selfpaced','null'), selected = 'Quick'),
   h6('Quick G.: 21 participants'),
@@ -181,13 +181,13 @@ mainPanel(
 
               tabPanel(value=1, h4(HTML('<div> Group & Electrode </div>')), br(), plotOutput('plot_GroupAndElectrode'),
                        h5(a(HTML('<p style="font-size:15px;"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Plots with 95% Confidence Intervals </p>'), 
-                            href='https://osf.io/dvs2z/'), align = 'left'),
+                            href='https://osf.io/2tpxn/'), align = 'left'),
                        downloadLink('downloadPlot.1', HTML('<div style="font-size:15px;"><i class="fa fa-download" aria-hidden="true"></i> &#8201; Download HD plot </div>'))
               ),
 
               tabPanel(value=2, h4('Participant & Area'), br(), plotOutput('plot_ParticipantAndLocation'),
                        h5(a(HTML('<p style="font-size:15px;"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Plots with 95% Confidence Intervals </p>'), 
-                            href='https://osf.io/dvs2z/'), align = 'left'),
+                            href='https://osf.io/86ch9/'), align = 'left'),
                        downloadLink('downloadPlot.2', HTML('<div style="font-size:15px;"><i class="fa fa-download" aria-hidden="true"></i> &#8201; Download HD plot </div>'))
               ),
 
@@ -197,7 +197,7 @@ mainPanel(
 
               tabPanel(value=4, h4('OLD Group & Electrode'), br(), plotOutput('plot_OLDGroupAndElectrode'),
                        h5(a(HTML('<p style="font-size:15px;"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Plots with 95% Confidence Intervals </p>'), 
-                            href='https://osf.io/dvs2z/'), align = 'left'),
+                            href='https://osf.io/yka4e/'), align = 'left'),
                        downloadLink('downloadPlot.4', HTML('<div style="font-size:15px;"><i class="fa fa-download" aria-hidden="true"></i> &#8201; Download HD plot </div>'))
               )),
   br(),
@@ -216,6 +216,6 @@ h5(HTML('<div style="padding-left:30px; padding-right:30px; padding-bottom:15px;
 h4(strong(HTML('<div style="background-color:#FEF9FF; padding-left:30px; padding-bottom:7px; padding-top:7px;"> Acknowledgments </div>'))),
 h5(HTML('<div style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"> This experiment was hosted and co-funded by the <a href="https://www.mpi.nl/department/neurobiology-language/4"> Neurobiology of Language department </a> at the <a href="https://www.mpi.nl"> Max Planck Institute for Psycholinguistics</a>. </div>')),
 h4(strong(HTML('<div style="background-color:#FEF9FF; padding-left:30px; padding-bottom:7px; padding-top:7px;"> See also: Modality norms </div>'))),
-h5(HTML('<div><a href="https://pablobernabeu.shinyapps.io/Dutch-modality-exclusivity-norms/" style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Dashboard presenting the modality norms used for the stimuli of this experiment. </a></div>')),
+h5(HTML('<div style="text-align:left; padding-left:30px; padding-right:30px; padding-bottom:15px; font-size:15px;"><a href="https://pablobernabeu.shinyapps.io/Dutch-modality-exclusivity-norms/"><i class="glyphicon glyphicon-new-window" aria-hidden="true"></i> &#8201; Dashboard presenting the modality norms used for the stimuli of this experiment</a> (in case of website downtime, please <a href="http://rpubs.com/pcbernabeu/Dutch-modality-exclusivity-norms">visit this alternative</a>).</div>')),
 br(), br(), br()
    ) )
