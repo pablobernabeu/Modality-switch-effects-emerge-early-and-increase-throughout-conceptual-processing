@@ -60,7 +60,7 @@ shinyUI(
 	h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
 	h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
 	h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
-	h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
+	h6(HTML('<div style="padding-top:20px; text-align:center"><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> Licence: <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" alt="Creative Commons License" /></a></div>'))
 	),
 
 
@@ -96,7 +96,7 @@ shinyUI(
 	h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
 	h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
 	h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
-	h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
+	h6(HTML('<div style="padding-top:20px; text-align:center"><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> Licence: <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" alt="Creative Commons License" /></a></div>'))
    ),
 
 
@@ -136,7 +136,7 @@ conditionalPanel(
   h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
   h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
   h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
-  h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
+  h6(HTML('<div style="padding-top:20px; text-align:center"><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> Licence: <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" alt="Creative Commons License" /></a></div>'))
 ),
 
 
@@ -164,7 +164,7 @@ conditionalPanel(
   h6(HTML('<div style="font-size: 12px; font-weight: bold; font-family: "Courier New", Courier, monospace;"><i class="fab fa-r-project" aria-hidden="true" style="font-size:20px; color:#5A647B; padding-top:16px;"></i> &#8201; <b>Source code</b></div>')),
   h6(HTML('<span> &nbsp; </span>'), a('server.R', href='https://osf.io/uj8z4/'), HTML('<span> &nbsp; <b>|</b> &nbsp; </span>'), a('ui.R', href='https://osf.io/8bwcx/')),
   h6(HTML('<span> &nbsp; </span>'), a('Edit & run in RStudio', href='https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio')),
-  h6(HTML('<div style="padding-top:20px;"> <a href="https://osf.io/97unm/" style="font-size:11px;"><i class="fab fa-creative-commons" style="font-size:18px; font-weight:bold; color:#414141;"></i> &#8201; CC-BY License </a></div>'))
+  h6(HTML('<div style="padding-top:20px; text-align:center"><a href="http://creativecommons.org/licenses/by/4.0/" rel="license"> Licence: <img style="border-width: 0;" src="https://i.creativecommons.org/l/by/4.0/80x15.png" alt="Creative Commons License" /></a></div>'))
 ) ),
 
 
