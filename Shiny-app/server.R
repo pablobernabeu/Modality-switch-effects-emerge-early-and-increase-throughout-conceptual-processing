@@ -49,8 +49,8 @@ plot_GroupAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=condition)
   annotate(geom='segment', y=-8.2, yend=-8.38, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
   theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='transparent', size=0),
-	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
-	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
+	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=16),
+	legend.title = element_text(size=16), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
 	plot.subtitle = element_text(size=16, hjust = 0.5),
 	axis.text.y = element_blank(), axis.text.x = element_text(size = 14, vjust= 2.12, face='bold', color = 'grey32', family='sans'),
 	axis.ticks=element_blank(), panel.border = element_blank(), panel.grid.major = element_blank(), 
@@ -247,8 +247,8 @@ plot_OLDGroupAndElectrode = ggplot(df2, aes(x=time, y=-microvolts, color=conditi
   annotate(geom='segment', y=-8.2, yend=-8.38, x=seq(-200,800,100), xend=seq(-200,800,100), color='black') +
   geom_segment(x = -200, y = 0, xend = 800, yend = 0, size=0.5, color='black') +
   theme(legend.position = c(0.100, 0.150), legend.background = element_rect(fill='transparent', size=0),
-	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=17),
-	legend.title = element_text(size=17, face='bold'), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
+	axis.title=element_blank(), legend.key.width = unit(1.2,'cm'), legend.text=element_text(size=16),
+	legend.title = element_text(size=16), plot.title = element_text(size=20, hjust = 0.5, vjust=2),
 	plot.subtitle = element_text(size=16, hjust = 0.5),
 	axis.text.y = element_blank(), axis.text.x = element_text(size = 14, vjust= 2.12, face='bold', color = 'grey32', family='sans'),
 	axis.ticks=element_blank(), panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
