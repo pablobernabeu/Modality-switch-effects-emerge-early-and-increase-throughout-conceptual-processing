@@ -1,4 +1,4 @@
-# [Binder repo] Modality switch effects emerge early and increase throughout conceptual processing
+## [Binder repo] Modality switch effects emerge early and increase throughout conceptual processing
 
 This Github repo has the sole purpose of enabling Binder environments to run R code in [**RStudio**](https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=rstudio) and [**Shiny**](https://mybinder.org/v2/gh/pablobernabeu/Modality-switch-effects-emerge-early-and-increase-throughout-conceptual-processing/master?urlpath=shiny/Shiny-app/) environments. Beyond this, all data and resources are [available on **OSF**](https://OSF.io/97unm/wiki).
 
