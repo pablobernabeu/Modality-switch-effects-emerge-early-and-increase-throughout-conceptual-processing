@@ -743,7 +743,8 @@ str(targetbeh_responded_OUT)
 
 
 # Question: Is each participant using one system or two systems with different speeds?
-# Frequency distribution of RTs per participant (histograms).
+# Frequency distribution of RTs per participant (histograms). Thank you to 
+# Alexis Perez-Bellido for suggesting this analysis.
 
 plot = ggplot(targetbeh_responded_OUT, aes(x=RT)) + geom_histogram(bins = 15) + facet_wrap(~Ptp, nrow=8) + theme_bw()
 
