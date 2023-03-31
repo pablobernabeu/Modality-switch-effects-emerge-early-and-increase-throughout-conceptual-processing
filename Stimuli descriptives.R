@@ -5,7 +5,7 @@ setwd('C:/Users/Pablo/Dropbox/STUDIES/R/Experiment Data/Modality-switching exper
 library(doBy)
 library(pastecs)
 
-stimuli = read.csv('stimulicsv.csv')
+stimuli = read.csv('Stimulicsv.csv')
 str(stimuli)
 
 # First confirm design-matched variables, length and frequency
